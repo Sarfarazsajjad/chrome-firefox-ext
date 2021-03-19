@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "URL-Ext",
+  "version": "1.0",
+
+  "description": "Tracking of URL visited by user.",
+
+  "icons": {
+    "48": "icons/msf_pic.png"
+  },
+
+  "permissions": ["*://localhost/*"],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
